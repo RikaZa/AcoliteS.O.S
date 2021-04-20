@@ -1,0 +1,214 @@
+/*bg de la página*/
+
+.bgpg{
+background-image: url(../../img/Inicio/bg_carro.jpg);
+background-position: center center; 
+background-repeat: no-repeat;   
+background-attachment: fixed;
+background-size: cover;
+}
+
+#bgdiv{
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+/*carousel tamaño y posición  || Tarjetas de menú*/
+
+    .fondocarousel{
+        background-color:  rgba(0, 0, 0, 0.349);
+    }
+    
+    .carousel-inner img {
+        width: 100%;
+        max-height: 100%px;
+    }
+    
+    .carousel-inner{
+     height: 100%;
+    }
+
+    .caro{
+    margin-top: -20px;}
+
+
+    #imgdiv{
+        height: 132px;
+        width: 100%;       
+    }
+
+    #textosmenu{
+        margin-top: -132px;
+        position: relative;
+        height: 132px;
+        width: 100%;
+        background-color: rgba(78, 78, 78, 0.486);
+        opacity: 0;
+    }
+    
+   #imgdiv:hover #textosmenu{
+       opacity: 1;
+   }
+
+   #imgdiv:hover #menuletras{
+    animation-duration: 0.2s;
+  animation-name: slidein;
+}
+
+#imgdiv:hover #menuletraslargas{
+    animation-duration: 0.2s;
+  animation-name: slidein;
+}
+
+   #menuletras{
+       padding-top: 28px;
+       text-align: center;
+       font-size: 50px;
+       color: rgb(255, 255, 255);
+   }
+
+   #menuletraslargas{
+    padding-top: 37px;
+    text-align: center;
+    font-size: 38px;
+    color: rgb(255, 255, 255);
+}
+
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+/*header*/
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+header {
+    margin-top: 10px;
+}
+
+#header {
+    margin: auto;
+    width: 100%;
+    margin-top: 120px;
+    position: sticky;
+    font-family: Helvetica, sans-serif;
+    z-index: 1;
+}
+
+.espaciomenu{
+    margin-top: 48px;
+    
+}
+
+
+/*logo*/
+.logo{
+    width: 100%; height: 190px;
+    display:block;
+margin:auto;
+}
+
+
+/*menú desplegable*/
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+background-color: rgba(0, 0, 0, 0.411);
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0,.5);    
+}
+
+
+.bg_submenu:hover{
+    background-color: rgba(7, 69, 110, 0.13);
+
+}
+
+.bg_submenu{
+    background-color: #0b56742d;
+;
+box-shadow: 0px 2px 10px rgba(0, 0, 0,.5);
+}
+
+.nav li a:hover {
+    background-color:#0b5674;
+    
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+
+/*footer*/
+.piederechos{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.548);
+    padding-bottom: 5px;
+}
+
+.textopie{
+    padding-top: 11px;
+    font-size: 16px;
+    color: white;
+}
+/*Testos*/
+#bgdivT{
+    background-color: rgba(0, 0, 0, 0.548);  
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.top{
+    color: white;
+    display: flex;
+    padding: 10px;
+}
+
+.textosIngreso h2{
+    background-color: rgb(36, 14, 165);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 80px;
+    margin-left: 460px;
+    border-radius: 10px;
+}
