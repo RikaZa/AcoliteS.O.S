@@ -62,6 +62,7 @@
     </header>
     
     <h2>Welcome <?php echo $_SESSION['usuario']?></h2>
+    
 </body>
 <footer>
   <br>

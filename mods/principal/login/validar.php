@@ -1,27 +1,25 @@
-<?php 
-
+<?php
 include("conexion.php");
-
-$email = $_POST['email'];
+$user = $_POST['cuenta'];
 $pass = $_POST['pass_user'];
 
-$stm = "SELECT * FROM usuario WHERE email = '$email'";
+$stm = "SELECT * FROM cuentas WHERE usuario = '$user' and clave = '$pass'";
 $result = mysqli_query($conex, $stm);
 if ($result == true) {
-    $user = mysqli_fetch_array($result);
-    if (password_verify($pass, $user['pass_user'])) {
+    $usuario = mysqli_fetch_array($result);
+    if ($pass == $usuario['clave']){
         session_start();
-        $_SESSION['user'] = $user['id'];
+        $_SESSION['usuario'] = $user;
         $response = array(
             'response' => 'true',
 
         );
-    } else {
+        header("location:Perfiles/perfil_acc.php");
+    }else {
         $response = array(
-            'response' => 'false'
+            header("location:index.php")
         );
     }
+      
 }
 die(json_encode($response));
-
-?>

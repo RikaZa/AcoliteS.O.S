@@ -61,14 +61,14 @@
           
           <div class="formulario">
               <h2>Iniciar Sesión</h2>
-              <form action="validar.php" method="post" id="login" enctype="multipart/form-data">
-                  <input type="text" name= "email'" placeholder="Email" required>
+              <form action="validar.php" method="post">
+                  <input type="text" name= "cuenta" placeholder="Usuario" required>
                   <input type="password" name= "pass_user" placeholder="Contraseña" required>
                   <input type="submit" name="Ingresar" value="Iniciar Sesión">
+                  <div id="resp"></div>
               </form>
-          </div>
-          <script src="js/main.js"></script>
-          
+              <script src="main.js"></script>
+          </div>          
           <div class="formulario">
               <h2>Crea tu Cuenta</h2>
               <form action="registrar.php"  method="post">

@@ -11,7 +11,7 @@ form.addEventListener('submit', function (e) {
             if (resp.response == 'true') {
                 document.getElementById('resp').innerHTML = "Correcto, redireccionando";
                 setTimeout(function () {
-                    window.location.href = "private.php";
+                    window.location.href = "Perfiles/perfil_acc.php";
                 }, 2000);
             } else {
                 alert("Error intenta devuelta");

@@ -6,8 +6,8 @@ if (isset($_POST['register'])){
         $pass = trim($_POST['password']);
         $email = trim($_POST['email']);
         $phone = trim($_POST['telefono']);
-        $consulta = "INSERT INTO usuario (cuenta, email, clave, telefono) VALUES ('$acc','$email','$pass','$phone')";
-        $resultado = mysqli_query($conex,$consulta);
+        $consulta = "INSERT INTO cuentas (usuario, clave, correo, telefono) VALUES ('$acc','$pass','$email','$phone')";
+        $resultado = mysqli_query($conex,$consulta);       
         if ($resultado){
             session_start();
             $_SESSION['usuario'] = $acc;
