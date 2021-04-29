@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Colite S.O.S | Inicio | </title>
+  <title> colite S.O.S | Inicio | </title>
   <link rel="shortcut icon" href="img/Inicio/favicon.png" type="image/x-icon">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -42,10 +42,10 @@
             <nav id="header">
               <ul class="nav social-header list-inline text-xs-right espaciomenu">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="mods/principal/servicios/index.php">Servicios</a></li>
-                <li><a href="mods/principal/nosotros/index.php">Contáctenos</a></li>
-                <li><a href="mods/principal/contacto/index.php">Nosotros</a></li>
-                <li><a href="mods/principal/login/index.php">ENTRAR</a></li>
+                <li><a href="mods/principal/servicios/index.html">Servicios</a></li>
+                <li><a href="mods/principal/nosotros/index.html">Contáctanos</a></li>
+                <li><a href="mods/principal/contacto/index.html">Nosotros</a></li>
+                <li><a href="mods/principal/login/index.php">Login</a></li>
               </ul>
             </nav>
           </div>
@@ -127,8 +127,8 @@
   <section>
     <div class="container" id="bgdivT">
       <div class="textosIngreso">
-        <div class="top">
-          <h1>Servicios</h1>
+        <div class="top">  
+        <h1>Servicios</h1>
         </div>
         <h2>Ingresa <a href="mods/principal/servicios/index.html">aquí</a></h2>
       </div>
@@ -164,7 +164,7 @@
         <div class="top">
           <h1>Inicia sesión</h1>
         </div>
-        <h2>Ingresa <a href="mods/principal/login/index.html">aquí</a></h2>
+        <h2>Ingresa <a href="mods/principal/login/index.php">aquí</a></h2>
       </div>
     </div>
   </section>

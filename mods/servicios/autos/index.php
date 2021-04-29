@@ -40,11 +40,11 @@
           <div>
             <nav id="header">
               <ul class="nav social-header list-inline text-xs-right espaciomenu">
-                <li><a href="../../../index.html">Inicio</a></li>
+                <li><a href="../../../index.php">Inicio</a></li>
                 <li><a href="../../principal/servicios/index.html">Servicios</a></li>
-                <li><a href="../../principal/nosotros/index.html">Acerca de Nosotros</a></li>
                 <li><a href="../../principal/contacto/index.html">Contáctanos</a></li>
-                <li><a href="../../principal/login/index.html">Login</a></li>
+                <li><a href="../../principal/nosotros/index.html">Nosotros</a></li>
+                <li><a href="../../principal/login/index.php">Login</a></li>
               </ul>
             </nav>
           </div>
