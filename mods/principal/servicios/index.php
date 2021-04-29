@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Colite S.O.S | Inicio | </title>
+  <title>  Colite S.O.S | Servicios | </title>
   <link rel="shortcut icon" href="img/Inicio/favicon.png" type="image/x-icon">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -35,17 +34,17 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
-          <a href="index.php"><img src="img/Inicio/logo.png" alt="logo" class="logo"></a>
+          <a href="../../../index.html"><img src="img/Inicio/logo.png" alt="logo" class="logo"></a>
         </div>
         <div class="col-lg-7">
           <div>
             <nav id="header">
               <ul class="nav social-header list-inline text-xs-right espaciomenu">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="mods/principal/servicios/index.php">Servicios</a></li>
-                <li><a href="mods/principal/nosotros/index.php">Contáctenos</a></li>
-                <li><a href="mods/principal/contacto/index.php">Nosotros</a></li>
-                <li><a href="mods/principal/login/index.php">ENTRAR</a></li>
+                <li><a href="../../../index.html">Inicio</a></li>
+                <li><a href="index.html">Servicios</a></li>
+                <li><a href="../nosotros/index.html">Acerca de Nosotros</a></li>
+                <li><a href="../contacto/index.html">Contáctanos</a></li>
+                <li><a href="../login/index.html">Login</a></li>
               </ul>
             </nav>
           </div>
@@ -59,7 +58,7 @@
           <div id="imgdiv">
             <img src="img/Inicio/AUTOS.jpg" id=imgdiv class="img-fluid" alt="Responsive image">
             <div id="textosmenu">
-              <a href="mods/servicios/autos/index.html" style="color:white">
+              <a href="../../servicios/autos/index.html" style="color:white">
                 <h5 id="menuletras">AUTOS</h5>
               </a>
             </div>
@@ -68,7 +67,7 @@
           <div id="imgdiv">
             <img src="img/Inicio/MOTOS.jpg" id=imgdiv class="img-fluid" alt="Responsive image">
             <div id="textosmenu">
-              <a href="mods/servicios/motos/index.html" style="color:white">
+              <a href="../../servicios/motos/index.html" style="color:white">
                 <h5 id="menuletras">MOTOS</h5>
               </a>
             </div>
@@ -77,7 +76,7 @@
           <div id="imgdiv">
             <img src="img/Inicio/WINCHAS.png" id=imgdiv class="img-fluid" alt="Responsive image">
             <div id="textosmenu">
-              <a href="mods/servicios/winchas/index.html" style="color:white">
+              <a href="../../servicios/winchas/index.html" style="color:white">
                 <h5 id="menuletraslargas">WINCHAS</h5>
               </a>
             </div>
@@ -86,7 +85,7 @@
           <div id="imgdiv">
             <img src="img/Inicio/PRODUCTOS.jpg" id=imgdiv class="img-fluid" alt="Responsive image">
             <div id="textosmenu">
-              <a href="mods/servicios/productos/index.html" style="color:white">
+              <a href="../../servicios/productos/index.html" style="color:white">
                 <h5 id="menuletraslargas">PRODUCTOS</h5>
               </a>
             </div>
@@ -125,50 +124,21 @@
 <main>
   <br>
   <section>
-    <div class="container" id="bgdivT">
-      <div class="textosIngreso">
-        <div class="top">
-          <h1>Servicios</h1>
-        </div>
-        <h2>Ingresa <a href="mods/principal/servicios/index.html">aquí</a></h2>
+<div class="container" id="bgdiv">
+  <div class="row">
+    <div class="col-lg-6">
+      <br>
+      <h1 class="titulos">AUTOS</h1>
+<p class="cuerpo">Es a menudo la mejor opción para un mantenimiento adecuado
+y a precios razonables. Usted puede mantener contacto directo 
+con el mécanico que trabaja en su auto.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="../../../img/emergencia.png" alt=""  class="imgservis">
       </div>
     </div>
+  </div>
   </section>
-  <br>
-  <section>
-    <div class="container" id="bgdivT">
-      <div class="textosIngreso">
-        <div class="top">
-          <h1>Acerca de nosotros</h1>
-        </div>
-        <h2>Ingresa <a href="mods/principal/nosotros/index.html">aquí</a></h2>
-      </div>
-    </div>
-  </section>
-
-  <br>
-  <section>
-    <div class="container" id="bgdivT">
-      <div class="textosIngreso">
-        <div class="top">
-          <h1>Contáctanos</h1>
-        </div>
-        <h2>Ingresa <a href="mods/principal/contacto/index.html">aquí</a></h2>
-      </div>
-    </div>
-  </section>
-  <br>
-  <section>
-    <div class="container" id="bgdivT">
-      <div class="textosIngreso">
-        <div class="top">
-          <h1>Inicia sesión</h1>
-        </div>
-        <h2>Ingresa <a href="mods/principal/login/index.html">aquí</a></h2>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <footer>

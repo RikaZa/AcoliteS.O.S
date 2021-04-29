@@ -1,25 +1,22 @@
 <?php
-include("conexion.php");
-$user = $_POST['cuenta'];
-$pass = $_POST['pass_user'];
+	include('conex.php');
+    if(isset($_POST['ingresar'])){
+        $cuenta = $_POST['cuenta'];
+        $clave = $_POST['clave'];
+        $sql_consult = "SELECT * FROM account where usuario = '$cuenta'";
+        $resultado = mysqli_query($conex,$sql_consult);
+        while($consulta = mysqli_fetch_array($resultado)){
+            $acc_pass = $consulta['clave'];
+        }
 
-$stm = "SELECT * FROM cuentas WHERE usuario = '$user' and clave = '$pass'";
-$result = mysqli_query($conex, $stm);
-if ($result == true) {
-    $usuario = mysqli_fetch_array($result);
-    if ($pass == $usuario['clave']){
-        session_start();
-        $_SESSION['usuario'] = $user;
-        $response = array(
-            'response' => 'true',
-
-        );
-        header("location:Perfiles/perfil_acc.php");
-    }else {
-        $response = array(
-            header("location:index.php")
-        );
+        if ($acc_pass == $clave){
+            session_start();
+            $_SESSION['usuario'] = $cuenta;
+            header("location:inicio_perfil/perfil.php");
+        }else{
+            ?>
+            <h3> No se pudo iniciar sesión!</h3>
+            <?php
+        }
     }
-      
-}
-die(json_encode($response));
+?>
